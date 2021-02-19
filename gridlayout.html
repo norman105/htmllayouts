@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gridlayout</title>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<style type="text/css">
+body{
+	background-image: url(images/wlp.jpg);
+}
+    #h{
+     background-color:grey;
+     color: #fff;
+     grid-area: header;
+      margin: 10px;  
+      padding: 10px; 
+           
+		}
+
+		     #nv{
+		     	grid-area: center;
+		     }
+
+		}
+		#A{ 
+	            
+			     grid-area: a;} 
+			     #p{width:100%}
+
+
+			#A2{  grid-area:main; 
+				}
+
+			#A3{      
+			          
+			         
+                       padding: 10px;
+                       margin: 10px;
+                       grid-area: leftmenu; 
+                       color:#fff;
+                      }
+
+		     
+			
+			#f{
+			           background-color: black;
+			           color: #fff;
+			           grid-area: footer;
+     margin: 10px;
+           padding: 10px;
+		}
+
+		.grid-container{
+			display: grid;
+			/*grid-template-columns: auto auto auto auto auto ;
+            grid-gap: 10pc;*/
+            grid-template-areas: 
+            'header header header header header'
+            'a main main main leftmenu'
+            'footer footer footer footer footer';
+
+		}
+	</style>
+</head>
+<body>
+	<!-- define a grid container -->
+	<div class="grid-container">
+    <div id="h" class="container mt-5">
+      <nav id="nv" class="navbar navbar-expand-sm bg-light">
+    	<button type="button " class="btn btn-primary" >login</button>
+         
+  <button type="button"class="btn btn-info">Sign in</button>
+
+</nav> 
+</div>
+      <div id="A">
+      	<img id="p" src="images/eb.jpg">
+       </div>
+	  <div id="A2">
+      
+  </div> 
+	<div id="A3">
+    <h3>BMW</h3>
+    <p>Bayerische Motoren Werke AG, commonly referred to as BMW, is a German multinational corporation which produces luxury vehicles and motorcycles. The company was founded in 1916 as a manufacturer of aircraft engines, which it produced from 1917 until 1918 and again from 1933 to 1945</p>
+    <p>Founded: 7 March 1916, Munich, Germany
+Production output: 2,564,025 vehicles (2019)
+Headquarters: Munich, Germany
+Stock price: BMW (ETR) €70.80 -0.23 (-0.32%)
+19 Feb, </p>
+	</div>
+
+	<div id="f"> 
+     <a class="nav-link" href="#"><p>Find a Retailer</p></a>
+   <a class="nav-link" href="#"> <p>Contact Us</p></a>
+   <a class="nav-link" href="#"> <p>About Us</p></a>
+		
+		
+
+	</div>
+
+</body>

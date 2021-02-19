@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flexbox</title>
+	<style type="text/css">
+   
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+	</style>
+</head>
+<body>
+<div class="header">
+  <h1>motorsport</h1>
+ 
+</div>
+    <div class="row"> 
+  <div class="column">
+    <img src="B1.jpg" style="width:100%">
+    <img src="B2.jpg" style="width:100%">
+ 
+  </div>
+  
+  <div class="column">
+    <img src="B3.jpg" style="width:100%">
+    <img src="eb.jpg" style="width:100%">
+   
+  </div> 
+   
+  <div class="column">
+    <img src="g1.jpg" style="width:100%">
+    <img src="g2.jpg" style="width:100%">
+  
+  </div>
+  
+  <div class="column">
+    <img src="g3x.jpg" style="width:100%">
+    <img src="wlp.jpg" style="width:100%">
+                     
+</div>
+</div>
+
+
+
+</body>
+</html>

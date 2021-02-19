@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid</title>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		#item1{
+/*           background-color: yellow;
+*/           grid-area: header;
+           margin: 10px;
+           padding: 10px;
+		}
+			#item2{
+			           background-color: blue;
+			           grid-area: a;
+     margin: 10px;
+           padding: 10px;
+		}
+			#item3{
+/*			           background-color: lightgreen;
+*/			           grid-area: main;
+			                margin: 10px;
+           padding: 10px;
+
+		}
+			#item4{
+			           background-color: purple;
+			           grid-area: leftmenu;
+			                margin: 10px;
+           padding: 10px;
+
+		}
+			#item5{
+			           background-color: tomato;
+			           grid-area: footer;
+     margin: 10px;
+           padding: 10px;
+		}
+
+		.grid-container{
+			display: grid;
+			/*grid-template-columns: auto auto auto auto auto ;
+            grid-gap: 10pc;*/
+            grid-template-areas: 
+            'header header header header header'
+            'a main main main leftmenu'
+            'footer footer footer footer footer';
+
+		}
+	</style>
+</head>
+<body>
+
+	<!-- define a grid container -->
+	<div class="grid-container">
+
+	<div id="item1">
+		<nav class="navbar navbar-expand-sm bg-light">
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 3</a>
+    </li>
+  </ul>
+
+</nav>
+
+	</div>
+	<div id="item2">2</div>
+	<div id="item3">
+		
+<form action="upload.php" method="post">
+  <div class="row">
+    <div class="col">
+               <label>Movie Name</label>
+
+      <input type="text" class="form-control" placeholder="Movie Name" name="movie_name" required="">
+    </div>
+    <div class="col">
+               <label>Lead Actor</label>
+
+      <input type="text" class="form-control" placeholder="Lead Actor" name="lead_actor">
+    </div>
+
+  </div>
+  <br>
+   <div class="row">
+    <div class="col">
+            <label>Duration</label>
+
+      <input type="number" class="form-control" placeholder="Time in Hours" name="duration" required="">
+    </div>
+    <div class="col">
+      <label>Movie Poster</label>
+      <input type="file" class="form-control"  placeholder="Movie Poster" required="">
+    </div>
+
+ 
+  </div>
+  <br>
+   <div class="row">
+    <div class="col">
+            <label>Rating</label>
+
+      <select class="form-control" name="rate">
+        <option value="PG">PG</option>
+        <option value="G">G</option>
+      </select>
+    </div>
+    <div class="col">
+         <label>Genre</label>
+
+      <select class="form-control" name="genre">
+        <option value="Action">Action</option>
+        <option value="Thriller">Thriller</option>
+        <option value="drama">Drama</option>
+      </select>   
+       </div>
+
+  </div>
+   
+<br>
+   <div class="row" style="margin-bottom: 10px;">
+    <div class="col">
+      <input type="submit" name="save" value="Submit Movie" class="form-control btn btn-primary btn-block">
+    </div>
+    <div class="col">
+      <input type="reset" class="form-control btn btn-danger btn-block">
+    </div>
+
+  </div>
+</form>
+
+
+	</div>
+	<div id="item4">4</div>
+	<div id="item5">5</div>		
+		
+
+	</div>
+
+</body>
+</html>
